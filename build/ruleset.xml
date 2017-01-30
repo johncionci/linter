@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ruleset name="pre-commit-linter">
+	<description>Pre Commit Linter WordPress Coding Standards</description>
+
+	<rule ref="WordPress-Core">
+		<exclude name="WordPress.PHP.YodaConditions" />
+		<exclude name="WordPress.Variables.GlobalVariables" />
+		<!-- This rule is foolish and breaks many legitimate uses -->
+		<exclude name="WordPress.XSS.EscapeOutput.OutputNotEscaped" />
+		<exclude name="WordPress.Files.FileName.UnderscoresNotAllowed" />
+		<exclude name="WordPress.WP.EnqueuedResources.NonEnqueuedScript" />
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace" />
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines" />
+		<exclude name="Generic.Strings.UnnecessaryStringConcat.Found" />
+		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys" />
+	</rule>
+
+	<rule ref="WordPress-Extra" />
+
+</ruleset>
+

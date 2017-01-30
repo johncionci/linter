@@ -1,0 +1,16 @@
+{
+	"name": "Pre Commit Linter",
+	"version": "0.1.0",
+	"homepage": "https://github.com/oomphinc/pre-commit-linter",
+	"authors": [
+		"Oomph <hello@oomphinc.com>"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}

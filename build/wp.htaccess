@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+	RewriteCond %{UPLOAD_REDIRECT} !-z
+	RewriteRule ^(app/uploads/.+) http://%{UPLOAD_REDIRECT}/$1 [R,L]
+
+	RewriteRule ^/index\.php$ - [L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule . /index.php [L]
+</IfModule>
+

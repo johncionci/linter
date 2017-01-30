@@ -1,0 +1,25 @@
+default:
+    suites:
+        default:
+            contexts:
+                - FeatureContext
+                - Behat\MinkExtension\Context\MinkContext
+    extensions:
+        jarnaiz\JUnitFormatter\JUnitFormatterExtension:
+        Behat\MinkExtension:
+            # The base_url used for all tests using a headless browser.
+            # In order to run the tests, you need to uncomment and update this
+            # line. Alternatively you can pass the value via the BEHAT_PARAMS
+            # environmental variable. You can see an example of this usage in
+            # the test.sh script.
+            #
+            # NOTE: It's important to note that if you uncomment this, the
+            # test.sh script will no longer work. That's because the behat.yml
+            # configuration file takes precedence over environment variables.
+            #
+            base_url: ''
+            sessions:
+                default:
+                    goutte: ~
+                browser:
+                    selenium2: ~

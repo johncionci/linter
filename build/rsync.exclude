@@ -1,0 +1,15 @@
+# Files which are excluded from all deployments
+
+# Composer package description
+composer.*
+
+# Build / VC / Cache / Backup
+.git*
+.DS_Store
+.svn
+.cvs
+.env
+*.bak
+*.swp
+Thumbs.db
+

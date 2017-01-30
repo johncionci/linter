@@ -1,0 +1,7 @@
+# Files specifically excluded from the WP Engine deploy
+#
+# Configuration.
+.htaccess
+wp-config.php
+/config
+/app/uploads

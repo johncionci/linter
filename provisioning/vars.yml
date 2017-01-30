@@ -1,0 +1,39 @@
+---
+project_name: Pre Commit Linter
+project_slug: pre-commit-linter
+project_snake: pre_commit_linter
+hostname: "pre-commit-linter.dev"
+db_dump_source: ''
+db_dump: ''
+swap_file_path: '/swapfile'
+swap_file_size: '1G'
+swappiness: '1'
+verbose: 0
+server:
+    install: '1'
+    packages: [git, subversion]
+    timezone: UTC
+    locale: en_US.UTF-8
+vagrant_local:
+    install: '1'
+    vm:
+      base_box: ubuntu/trusty64
+      hostname: "{{ hostname }}"
+      ip: 192.168.33.99
+      memory: 1024
+      cpus: 4
+apache_remove_default_vhost: true
+apache_vhosts:
+    - servername: "{{ hostname }}"
+      documentroot: "/vagrant/web"
+mysql:
+    install: '1'
+    root_password: ''
+    database: "{{ project_snake }}_db"
+php:
+    install: '1'
+    packages: [php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-mysql]
+xdebug:
+    install: '1'
+composer:
+    install: '1'

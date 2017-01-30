@@ -1,0 +1,18 @@
+---
+
+- name: Update apt
+  apt: update_cache=yes
+
+- name: Install php5
+  apt: pkg=php5 state=latest
+
+- name: Install php5-fpm
+  apt: pkg=php5-fpm state=latest
+
+- name: Install PHP Packages
+  apt: pkg="{{ item }}" state=latest
+  with_items: "{{ php.packages }}"
+  when: php.packages is defined
+
+- include: configure.yml
+- include: pecl.yml

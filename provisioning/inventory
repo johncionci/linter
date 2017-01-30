@@ -1,0 +1,2 @@
+[web]
+pre-commit-linter.dev ansible_host=192.168.33.99

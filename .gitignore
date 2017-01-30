@@ -1,0 +1,62 @@
+# Development artifacts
+tags
+
+# Setup artifacts
+.*.orig
+
+# CodeSniffer Validation standards
+wpcs
+
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*
+!web/app/mu-plugins/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+!web/app/mu-plugins/disallow-indexing.php
+!web/app/mu-plugins/register-theme-directory.php
+!web/app/mu-plugins/bedrock-autoloader.php
+/bower_components
+
+# WordPress
+web/wp
+web/.htaccess
+
+# WordPress tests
+wp-tests
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Environments
+.env
+*.env
+!project.env
+!.env.example
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+/.vagrant/
+/html/
+/default/
+/puphpet
+
+# Deployment artifacts
+/deploy
+
+# Compiled assets
+web/app/themes/pre-commit-linter/assets
+
+# Build Caches
+/.db-cache
+/.sass-cache
+/.oomphrock-upgrade
