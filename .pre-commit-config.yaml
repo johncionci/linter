@@ -3,4 +3,4 @@
   hooks:
   - id: scss-lint
     args: [--config=src/scss/.scss-lint.yml, --exclude=src/scss/libraries/, --color]
-    stages: [push]
+    stages: [commit]
