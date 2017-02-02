@@ -30,8 +30,8 @@ object {
 // Text selection colors. Keep declarations separate
 //
 ::selection {
-	background: palette(brand);
-	color: palette(mono, white);
+	// background: palette(brand);
+	// color: palette(mono, white);
 }
 ::-moz-selection {
 	background: palette(brand);
