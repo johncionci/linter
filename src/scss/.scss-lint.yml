@@ -94,8 +94,8 @@ linters:
   Indentation:
     enabled: true
     allow_non_nested_indentation: false
-    character: tab # or 'space'
-    width: 1
+    character: space # or 'tab'
+    width: 2
 
   LeadingZero:
     enabled: false
