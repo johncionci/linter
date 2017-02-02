@@ -45,7 +45,7 @@ nav > ul,
 nav > ol,
 ul.menu,
 ol.menu {
-    @include list-reset();
+    // @include list-reset();
 
     // More often than not, we want anchors in menus to display block
     a { display: block; }
