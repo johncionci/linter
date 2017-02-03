@@ -6,13 +6,13 @@ $base-type-size: 1em;
 // Root Elements
 //
 html {
-	// font-size: $base-type-size;
-	// -webkit-font-smoothing: antialiased;
+	font-size: $base-type-size;
+	-webkit-font-smoothing: antialiased;
 }
 
 html,
 body {
-	// height: 100%;
+	height: 100%;
 }
 
 //
@@ -21,32 +21,32 @@ body {
 img,
 video,
 object {
-	// display: block;
-	// height: auto;
-	// max-width: 100%;
+	display: block;
+	height: auto;
+	max-width: 100%;
 }
 
 //
 // Text selection colors. Keep declarations separate
 //
 ::selection {
-	// background: palette(brand);
-	// color: palette(mono, white);
+	background: palette(brand);
+	color: palette(mono, white);
 }
 ::-moz-selection {
-	// background: palette(brand);
-	// color: palette(mono, white);
+	background: palette(brand);
+	color: palette(mono, white);
 }
 
 //
 // Reset lists when used as navigational elements
 //
-nav > ul,
-nav > ol,
-ul.menu,
+nav > ul, 
+nav > ol, 
+ul.menu, 
 ol.menu {
-    // @include list-reset();
-
+    @include list-reset();
+    
     // More often than not, we want anchors in menus to display block
-    // a { display: block; }
+    a { display: block; }
 }
