@@ -233,10 +233,9 @@ linters:
 
   VariableForProperty:
     enabled: true
-    properties: [
+    properties:
       - color
       - font
-    ]
 
   VendorPrefix:
     enabled: true
