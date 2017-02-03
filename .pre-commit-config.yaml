@@ -3,9 +3,9 @@
   hooks:
   - id: scss-lint
     args: [
-    	--config=src/scss/.scss-lint.yml,
-    	--exclude=src/scss/libraries/,
-    	--color
+      --config=src/scss/.scss-lint.yml,
+      --exclude=src/scss/libraries/,
+      --color
     ]
    	stages: [commit] # push?
    	name: SCSS Linter
