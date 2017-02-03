@@ -7,6 +7,6 @@
       --exclude=src/scss/libraries/,
       --color
     ]
-   	stages: [commit] # push?
-   	name: SCSS Linter
-   	description: SCSS Linter based on the most recent company standards.
+    stages: [commit] # push?
+    name: SCSS Linter
+    description: SCSS Linter based on the most recent company standards.
